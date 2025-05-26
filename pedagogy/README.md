@@ -5,13 +5,13 @@
 
 
 <br>
-<b> Experiment : Name of the experiment	 <a name="top"></a> <br>
+<b> Experiment : Logic Gates Implementation (SOP/POS Form) 	 <a name="top"></a> <br>
 </p>
 
-<b>Discipline | Fill your discipline name here <b> 
+<b>Discipline | Electronics Engineering <b> 
 :--|:--|
-<b> Lab | Fill your lab name here<b> 
-<b> Experiment|  Fill your experiment name here   <b> 
+<b> Lab | Digital Electronics <b> 
+<b> Experiment|  Logic Gates Implementation (SOP/POS Form)   <b> 
 
 
 <h4> [1. Focus Area](#LO)
@@ -23,6 +23,12 @@
 
 <a name="LO"></a>
 #### 1. Focus Area : Reinforce theoretical concept.
+Reinforce theoretical understanding of logic design.
+
+Practical implementation of Boolean expressions using digital logic gates.
+
+Visual understanding of SOP and POS expressions.
+
 
 #### 2. Learning Objectives and Cognitive Level
 
