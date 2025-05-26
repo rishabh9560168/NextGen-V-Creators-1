@@ -13,13 +13,15 @@
 
 <b>Name of Developer | <b> Rajeev Baghel Sir 
 :--|:--|
-<b> Rajkiya Engineering College Kannauj | <b>  
-<b> |     <b>  
-<b> Electronics Engineering |  
+<b> Institute | <b>  Rajkiya Engineering College Kannauj
+<b> Email id   |<b> rajeev@reck.ac.in 
+<b> Department | <b> Electronics Engineering
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 | Aditya Singh Gautam |  Student | Elecronics | Rajkiya Engineering College Kannauj | gautamaditya122333@gmail.com
+2 | Rishabh Srivastava | Student | Computer Science | Rajkiya Engineering College Kannauj| rishabhsrivastava796@gmail.com
+3 | Divyanshu | Student | Electrical | Rajkiya Engineering College Kannauj| mrdivyanshu994@gmail.com
+4 | Nitin | Student | Electronics | Rajkiya Engineering College Kannauj| imkumar8848@gmail.com
