@@ -48,7 +48,7 @@ Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 
 <a name="IS"></a>
 #### 3. Instructional Strategy
-###### Name of Instructional Strategy  :  Interactive Simulation  <u>   
+###### Name of Instructional Strategy  :  Interactive Simulation  
 ###### Assessment Method:  Observation, MCQs, Circuit Verification 
 
 <u> <b>Description: </b>    </u>
@@ -67,7 +67,7 @@ This experiment bridges the gap between theoretical Boolean algebra and hardware
 #### 4. Task & Assessment Questions:
 
   
-<br>
+
 
 Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the simulator | Assessment Questions as per LO & Task
 :--|:--|:--|:-:
