@@ -1,20 +1,21 @@
 ## Introduction
 
 
-<b>Discipline | <b>Electronics Enginnering
+<b>Discipline | <b>Electronics Engineering
 :--|:--|
 <b> Lab | <b>  Digital Electronics
 <b> Experiment|     <b> Logic Gates Implementation (SOP/POS form)
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+ Logic Gates Implementation (SOP/POS form)
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+
+<b>Name of Developer | <b> Rajeev Baghel Sir 
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Rajkiya Engineering College Kannauj | <b>  
+<b> |     <b>  
+<b> Electronics Engineering |  
 
 ### Contributors List
 
