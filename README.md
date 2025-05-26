@@ -8,7 +8,7 @@
 
 ### About the Experiment 
 
- Logic Gates Implementation (SOP/POS form)
+ This virtual lab experiment focuses on the implementation of Boolean expressions using logic gates in both Sum of Products (SOP) and Product of Sums (POS) forms. It helps students understand the practical realization of logic functions using basic digital components.
 
 
 <b>Name of Developer | <b> Rajeev Baghel Sir 
