@@ -36,10 +36,8 @@
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
 1.| Understand the difference between SOP and POS logic expressions | Understanding | Differentiate
-
-2.| Implement given Boolean equations using logic gates | Applying | Construct
-
-3.| Analyze logical correctness using truth tables | Analyzing | Verify 
+2.| Implement given Boolean equations using logic gates             | Applying      | Construct
+3.| Analyze logical correctness using truth tables                  | Analyzing     | Verify 
 
 <br/>
 <div align="right">
