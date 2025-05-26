@@ -23,11 +23,11 @@
 
 <a name="LO"></a>
 #### 1. Focus Area : Reinforce theoretical concept.
-Reinforce theoretical understanding of logic design.
+1.Reinforce theoretical understanding of logic design.
 
-Practical implementation of Boolean expressions using digital logic gates.
+2.Practical implementation of Boolean expressions using digital logic gates.
 
-Visual understanding of SOP and POS expressions.
+3.Visual understanding of SOP and POS expressions.
 
 
 #### 2. Learning Objectives and Cognitive Level
@@ -35,9 +35,11 @@ Visual understanding of SOP and POS expressions.
 
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
-1.|   <br>   |    |   
-2.|   <br>   |    |   
-3.|   <br>   |    |   
+1.| Understand the difference between SOP and POS logic expressions | Understanding | Differentiate
+
+2.| Implement given Boolean equations using logic gates | Applying | Construct
+
+3.| Analyze logical correctness using truth tables | Analyzing | Verify 
 
 <br/>
 <div align="right">
