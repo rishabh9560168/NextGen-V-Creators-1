@@ -3,7 +3,7 @@
 
 <b>Discipline | <b>Electronics Enginnering
 :--|:--|
-<b> Lab | <b> Electronics
+<b> Lab | <b>  Digital Electronics
 <b> Experiment|     <b> Logic Gates Implementation (SOP/POS form)
 
 ### About the Experiment 
