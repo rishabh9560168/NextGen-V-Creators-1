@@ -4,41 +4,127 @@
 
 ## Storyboard
 
-Delete this line before submission : The core principle of storyboarding is to make the lab/experiment documentation elaborated in a manner that it makes easy for any person (developer/domain and non domain faculty/student) to understand and develop the lab/experiment.
 
-Experiment 1: Name of the Experiment
+Experiment 1: Logic Gates Implementation (SOP/POS form)
 
 ### 1. Story Outline
+This experiment introduces learners to the foundational concept of implementing Boolean expressions using logic gates in SOP (Sum of Products) and POS (Product of Sums) forms. The goal is to bridge the theoretical knowledge of Boolean algebra and digital logic design with practical circuit realization using universal gates like NAND and NOR.
 
-Describe outline here ( Guide : The proposer should first draft the story outline for the proposed outline. This could be 2 or 3 paragraphs.)
+The user will be guided through a virtual lab where they can enter a Boolean expression in SOP/POS form, simplify it using Boolean laws or K-maps, and then simulate the logical circuit. This interactive environment will help learners identify, assemble, and verify correct logic gate combinations based on a given expression. Mistakes, incorrect output observations, and conceptual pitfalls are handled through guided hints and feedback.
+
+
 
 ### 2. Story
 
-Describe the Story introduction here (Guide : The next step is to write a story. Story should be a brief logical description in simple English. It should talk about the overall execution of the experiment in a simplified manner. (should not include any equations/ drawings). The story should include the following points) )
+This experiment simulates the real-world task of building logical circuits based on Boolean expressions. The user begins by choosing whether they want to work in SOP or POS form. They are then provided with a truth table or Boolean expression, which they must reduce and translate into logic gate combinations.
+
+The system allows drag-and-drop of gates such as AND, OR, NOT, NAND, NOR to build circuits. The user can test different inputs and observe outputs using a virtual LED or waveform display. Challenges include identifying correct simplifications and connecting gates in the correct sequence.
+
+Errors like incorrect connections or logic mismatches are detected, and learners are offered feedback. In the end, a summary and evaluation based on their performance (time, number of attempts, and hints used) is provided.
 
 #### 2.1 Set the Visual Stage Description:
-Describe here : (Guide : When a user lands up into a simulator, the visual stage is the first thing that user comes across. The visual stage should include all the elements to be seen by a user on an imaginary canvas.  (This should NOT include any drawings. ) )
+Upon entering the simulator, the user sees:
+
+1.A Boolean expression/truth table panel (input area).
+
+2.A digital breadboard/workspace.
+
+3.A toolbox containing logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR).
+
+4.Input switches (A, B, C...) and output LEDs.
+
+5.A simulation button to test circuit behavior.
+
+6.Hint/help icon.
+
+7.K-map simplifier (optional module).
+
+
 
 #### 2.2 Set User Objectives & Goals:
-Describe the objectives and goals in details here : (Guide : The user should clearly understand the aims and objective of the experiment. ( how he will begin experiment. in descriptive))
+1.Understand how to convert Boolean expressions to SOP/POS forms.
+
+2.Implement the expressions using logic gates.
+
+3.Verify the output of the circuit for all input combinations.
+
+4.Minimize the logic expression using K-map (if included).
+
+5.Learn the difference between SOP and POS circuits practically.
+
+The user starts by choosing SOP or POS mode, inputs the Boolean expression or truth table, simplifies it, builds the circuit using provided gates, and tests the outputs.
+
 
 #### 2.3 Set the Pathway Activities:
 
-Describe the pathway activites here : (Guide : Set the pathway activities in line with the learning objectives (LOs)  & with a view to achieve the goals set in introductory & pedagogy documnets.  (once he begins, how he will traverse through the entire experiment ? in descriptive))
+1.Select SOP or POS mode.
+
+2.Receive the Boolean expression or truth table.
+
+3.Optionally simplify the expression using Boolean laws or K-map.
+
+4.Drag and place the required gates in the circuit area.
+
+5.Connect inputs and gates logically as per the expression.
+
+6.Test for all input combinations.
+
+7.Observe outputs through LEDs or waveform.
+
+8.Submit and receive evaluation feedback.
+
+
 
 ##### 2.4 Set Challenges and Questions/Complexity/Variations in Questions:
 
-Describe the challenges Here : (Guide : Set Challenges and Questions/Complexity/variations in questions according to User’s level, so as to invoke the learners’ interest.  (while traversing, what challenges he will face? how he has to solve and overcome ? descriptive).)
+1.Implement the same logic using both NAND-only and NOR-only logic.
+
+2.Choose the correct K-map simplification for a given expression.
+
+3.Predict the output without simulating and match it after circuit simulation.
+
+4.Convert complex expressions involving 3-4 variables.
+
+5.Distinguish between SOP and POS when both give the same output.
+
 
 ##### 2.5 Allow pitfalls:
-Describe the pitfalls here: (Guide : while traversing or while solving challenge, how will we bring a situation in front of him that he commits mistake if he is not attentive , or not following procedure , descriptive)
+1.User may incorrectly connect gates (e.g., feed output to incorrect input).
+
+2.May place wrong gate (e.g., AND instead of NAND).
+
+3.May skip simplification and implement unnecessarily complex circuits.
+
+4.May assume output without verifying all input cases.
+
+These pitfalls are caught by automatic verification or output mismatch alerts.
+
+
 
 ##### 2.6 Conclusion:
-Describe conclusion here : (Guide: This may include displaying: how much time did the user take to solve the questions/ How many questions were right?/ How many hints did the learner use. Based on this the evaluation/marking to be suggested to the user. (once he is towards the completion of the experiment, what LO he is taking along with him, what will be his probable, interpretation/conclusion , descriptive) )
+At the end of the simulation:
+
+1.The system shows a report: Time taken, attempts made, and hints used.
+
+2.Feedback on whether the output for all inputs matches the expected output.
+
+3.Suggestions on circuit optimization (if redundant gates were used).
+
+4.The learner walks away with a concrete understanding of logic gate-based implementation of Boolean expressions in SOP/POS formats.
+
+
 
 ##### 2.7 Equations/formulas: NA
-Type equations here : (Guide : ( a separate sheet having equations / programs for the lab exper3ment to be shared along with the Story submissions (1) . You can mark it as numerical reference numbers within the story narration (like we cite in the research papers) and then separately share these equations/programs sheets as a reference, do not include the equations as a whole in the narration))
-Tool can be used to integrate formula in Markdown <b> [here](http://latex.codecogs.com/eqneditor/samples/example3.php) </b>
+Equations such as:
+
+SOP form: 
+𝑌=AB'+AB
+POS form: 
+𝑌=(A+B)(A'+B')
+
+
+
+These will be documented separately in the Equations sheet as per PH3 guidelines <b> [here](http://latex.codecogs.com/eqneditor/samples/example3.php) </b>
 
 
 ### 3. Flowchart
