@@ -119,6 +119,7 @@ Equations such as:
 
 SOP form: 
 𝑌=AB'+AB
+
 POS form: 
 𝑌=(A+B)(A'+B')
 
