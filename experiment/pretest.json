@@ -2,37 +2,173 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following gates is known as a universal gate?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "AND",
+        "b": "OR",
+        "c": "NAND",
+        "d": "XOR"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "AND gate is not a universal gate.",
+        "b": "OR gate cannot construct all logic functions.",
+        "c": "NAND gate is a universal gate. <a href='https://en.wikipedia.org/wiki/NAND_gate'>Learn more</a>",
+        "d": "XOR is not a universal gate."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What does SOP stand for in Boolean algebra?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Sum of Powers",
+        "b": "Set of Products",
+        "c": "Sum of Products",
+        "d": "Series of Products"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect terminology.",
+        "b": "Close but not standard term.",
+        "c": "Correct. SOP means Sum of Products.",
+        "d": "Not a valid term in Boolean logic."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The POS form of a Boolean expression is a product of:",
+      "answers": {
+        "a": "Products",
+        "b": "Sums",
+        "c": "Differences",
+        "d": "Quotients"
+      },
+      "explanations": {
+        "a": "SOP is Sum of Products, not POS.",
+        "b": "Correct. POS = Product of Sums.",
+        "c": "Difference is not a Boolean term.",
+        "d": "Quotients do not apply here."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following expressions represents an AND gate?",
+      "answers": {
+        "a": "A + B",
+        "b": "A * B",
+        "c": "A / B",
+        "d": "A - B"
+      },
+      "explanations": {
+        "a": "+ denotes OR gate.",
+        "b": "* represents AND in Boolean logic.",
+        "c": "Division is not used in Boolean algebra.",
+        "d": "Subtraction is invalid in logic."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which logic gate produces a HIGH output only when both inputs are LOW?",
+      "answers": {
+        "a": "AND",
+        "b": "OR",
+        "c": "NOR",
+        "d": "XOR"
+      },
+      "explanations": {
+        "a": "AND outputs HIGH only when both inputs are HIGH.",
+        "b": "OR outputs HIGH if at least one input is HIGH.",
+        "c": "Correct. NOR is the inverse of OR.",
+        "d": "XOR outputs HIGH when inputs differ."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is NOT a basic logic gate?",
+      "answers": {
+        "a": "AND",
+        "b": "OR",
+        "c": "XOR",
+        "d": "NOT"
+      },
+      "explanations": {
+        "a": "AND is a basic gate.",
+        "b": "OR is a basic gate.",
+        "c": "XOR is a derived gate.",
+        "d": "NOT is a basic gate."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which expression is in canonical SOP form?",
+      "answers": {
+        "a": "A + B",
+        "b": "A'B + AB'",
+        "c": "A'B'C + ABC",
+        "d": "(A + B)(A + C)"
+      },
+      "explanations": {
+        "a": "Not all combinations covered.",
+        "b": "Not fully canonical.",
+        "c": "Correct. Canonical SOP includes all variables.",
+        "d": "This is POS form."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How many input combinations are possible for a 3-variable truth table?",
+      "answers": {
+        "a": "4",
+        "b": "6",
+        "c": "8",
+        "d": "10"
+      },
+      "explanations": {
+        "a": "2 variables give 4 combinations.",
+        "b": "Incorrect, not power of 2.",
+        "c": "Correct. 2^3 = 8.",
+        "d": "Wrong, not a power of 2."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In SOP, a product term corresponds to a row where:",
+      "answers": {
+        "a": "Output is 0",
+        "b": "Input is 0",
+        "c": "Output is 1",
+        "d": "All inputs are same"
+      },
+      "explanations": {
+        "a": "This is POS.",
+        "b": "Incorrect concept.",
+        "c": "Correct. Product terms are added for 1s.",
+        "d": "Unrelated to output."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which logic gate outputs LOW only when all inputs are HIGH?",
+      "answers": {
+        "a": "NAND",
+        "b": "OR",
+        "c": "AND",
+        "d": "NOR"
+      },
+      "explanations": {
+        "a": "Correct. NAND inverts AND.",
+        "b": "OR outputs HIGH with at least one HIGH input.",
+        "c": "AND outputs HIGH when all inputs are HIGH.",
+        "d": "NOR is an inverted OR."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
