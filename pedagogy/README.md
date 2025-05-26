@@ -48,12 +48,13 @@ Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 
 <a name="IS"></a>
 #### 3. Instructional Strategy
-###### Name of Instructional Strategy  :    <u>   
-###### Assessment Method:   
+###### Name of Instructional Strategy  :  Interactive Simulation  <u>   
+###### Assessment Method:  Observation, MCQs, Circuit Verification 
 
 <u> <b>Description: </b>    </u>
 <br>
-    
+Students will enter or choose a Boolean expression and visualize the corresponding SOP/POS form implementation using basic logic gates (AND, OR, NOT). The simulator will allow circuit construction and display the output based on input combinations.
+This experiment bridges the gap between theoretical Boolean algebra and hardware-level logic gate design. It also improves logical thinking and debugging skills.  
 
 <br/>
 <div align="right">
@@ -70,8 +71,9 @@ Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 
 Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the simulator | Assessment Questions as per LO & Task
 :--|:--|:--|:-:
-1.|   <br>  |   <br>  | <br> 
-2.|   <br>  |   <br>  | <br> 
+1.| Differentiate SOP and POS | Choose/enter Boolean expression and select SOP or POS format | What is the difference between SOP and POS form?
+2.| Construct logic circuits  | Connect logic gates according to the selected Boolean equation | How would you implement A’B + AB’ using logic gates?
+3.| Verify logical output | Observe truth table and match expected outputs | Does the simulated output match the expected result from the truth table? 
 
 
 <div align="right">
@@ -82,10 +84,11 @@ Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the s
 
 <a name="SI"></a>
 
-#### 4. Simulator Interactions:
+#### 5. Simulator Interactions:
 <br>
 
 Sr.No | What Students will do? |	What Simulator will do?	| Purpose of the task
 :--|:--|:--|:--:
-1.|  <br> | <br> |   
-2.|  <br> | <br> |
+1.| Input or select Boolean expression | Display the corresponding SOP/POS schematic with logic gates | Help visualize logic expression implementation
+2.| Connect AND, OR, NOT gates accordingly | Simulate the circuit with changing inputs | Show real-time output for input combinations
+3.| Test circuit with truth table | Compare expected and simulated results | Verify correctness and reinforce logic concepts
