@@ -15,7 +15,7 @@
 :--|:--|
 <b> Institute | <b>  Rajkiya Engineering College Kannauj
 <b> Email id   |<b> rajeev@reck.ac.in 
-<b> Department | <b> Electronics Engineering
+<b> Department | <b> Department of Electronics Engineering
 
 ### Contributors List
 
