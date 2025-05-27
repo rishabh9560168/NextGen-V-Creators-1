@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logic Gates Virtual Simulation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-		<!-- Your code goes here-->
+  <header>
+    <h1>Virtual Lab: Logic Gates Simulation (SOP/POS Form)</h1>
+    <p class="sub-heading">Simulate the behavior of digital logic gates as if you're in a real lab!</p>
+  </header>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+  <main class="container">
+    <section class="section simulation-panel">
+      <h2>Logic Gate Evaluation</h2>
+      <div class="lab-controls">
+        <div class="switches">
+          <label><input type="checkbox" class="input-bit" /> A</label>
+          <label><input type="checkbox" class="input-bit" /> B</label>
+          <label><input type="checkbox" class="input-bit" /> C</label>
+        </div>
+        <div class="gate-selector">
+          <label for="gate-select">Choose Gate:</label>
+          <select id="gate-select">
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+            <option value="NAND">NAND</option>
+            <option value="NOR">NOR</option>
+            <option value="XOR">XOR</option>
+            <option value="XNOR">XNOR</option>
+          </select>
+        </div>
+        <button onclick="evaluateGate()">Run Simulation</button>
+        <div class="output" id="gate-output">Output: --</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Truth Table Generator</h2>
+      <button onclick="generateTruthTable()">Generate Truth Table</button>
+      <div id="truth-table" class="output-table"></div>
+    </section>
+
+    <section class="section">
+      <h2>SOP / POS Expression Builder</h2>
+      <label>Min Terms (comma-separated): <input id="min-terms" type="text" placeholder="e.g. 1,3,5" /></label>
+      <br />
+      <label>Max Terms (comma-separated): <input id="max-terms" type="text" placeholder="e.g. 0,2,4" /></label>
+      <br />
+      <button onclick="buildExpressions()">Build Expressions</button>
+      <div class="output" id="expression-output"></div>
+    </section>
+
+    <section class="section">
+      <h2>Logic Gate Reference Diagrams</h2>
+      <div class="gates-diagram">
+        <div class="gate"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/AND_ANSI_Labelled.svg" alt="AND Gate" /><p>AND</p></div>
+        <div class="gate"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/OR_ANSI_Labelled.svg" alt="OR Gate" /><p>OR</p></div>
+        <div class="gate"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/NOT_ANSI_Labelled.svg" alt="NOT Gate" /><p>NOT</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Virtual Labs Initiative | CSE Department</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
