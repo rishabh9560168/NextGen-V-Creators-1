@@ -1,4 +1,4 @@
-### Link your references in here
+
 # 📚 References for Logic Gates Implementation (SOP/POS Form)
 
 This document lists the key references and resources used in the development of the virtual lab simulation on "Logic Gates Implementation (SOP/POS form)". These materials cover fundamental digital logic design, simulation tools, and educational support.
