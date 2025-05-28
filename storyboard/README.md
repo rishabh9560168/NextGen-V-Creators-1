@@ -125,8 +125,6 @@ POS form:
 
 
 
-These will be documented separately in the Equations sheet as per PH3 guidelines <b> [here](http://latex.codecogs.com/eqneditor/samples/example3.php) </b>
-
 
 ### 3. Flowchart
 Link to flow chart Here : Store in the  /flowchart folder within pedagogy folder in your repo
