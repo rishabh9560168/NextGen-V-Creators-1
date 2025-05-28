@@ -1,70 +1,641 @@
-/* You CSS goes in here */
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #e6f0f5;
-  color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
 }
 
-header {
-  background-color: #003366;
-  color: white;
-  padding: 20px;
-  text-align: center;
+/* Layout */
+.min-h-screen {
+    min-height: 100vh;
 }
 
-.lab-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+.bg-gradient {
+    background: linear-gradient(135deg, #dbeafe 0%, #f3e8ff 100%);
 }
 
-.module {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 400px;
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-h2 {
-  color: #003366;
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
-.inputs label {
-  margin-right: 10px;
+@media (min-width: 1024px) {
+    .grid-layout {
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
-select, input, button {
-  margin-top: 10px;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 100%;
+/* Typography */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
 }
 
-button {
-  background: #0066cc;
-  color: white;
-  cursor: pointer;
-  border: none;
-  transition: background 0.3s;
+.subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
 }
 
-button:hover {
-  background: #0055aa;
+.text-center {
+    text-align: center;
 }
 
-.output {
-  margin-top: 10px;
-  padding: 10px;
-  background: #f0f8ff;
-  border-radius: 5px;
+.mb-8 {
+    margin-bottom: 2rem;
 }
 
-#gates img {
-  width: 80px;
-  margin: 10px;
+/* Cards */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+}
+
+.card-header {
+    padding: 1.5rem 1.5rem 0;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Voice Guide */
+.voice-guide {
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff);
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.voice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.voice-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e40af;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.voice-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.language-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.voice-description {
+    font-size: 0.875rem;
+    color: #1d4ed8;
+}
+
+.voice-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.input, .select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus, .select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background: white;
+    border: 1px solid #d1d5db;
+    color: #374151;
+}
+
+.btn-outline:hover {
+    background: #f9fafb;
+}
+
+.btn-sm {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-green {
+    background: #f0fdf4;
+    border-color: #16a34a;
+    color: #15803d;
+}
+
+.btn-green:hover {
+    background: #dcfce7;
+}
+
+.icon {
+    font-size: 1rem;
+}
+
+/* Tabs */
+.tabs {
+    margin-top: 1rem;
+}
+
+.tab-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.tab-trigger {
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.tab-trigger.active {
+    background: white;
+    color: #1f2937;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* K-Map Specific Styles */
+.kmap-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.kmap-table {
+    border-collapse: collapse;
+    border: 2px solid #374151;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.kmap-table th,
+.kmap-table td {
+    border: 2px solid #374151;
+    padding: 0.75rem;
+    text-align: center;
+    min-width: 4rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.kmap-table th {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    color: #1e40af;
+}
+
+.kmap-table .row-header {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    color: #1e40af;
+}
+
+.kmap-cell {
+    background: white;
+    color: #374151;
+}
+
+.kmap-cell:hover {
+    transform: scale(1.1);
+}
+
+.kmap-cell.one {
+    background: #dcfce7;
+    color: #166534;
+    border-color: #16a34a;
+}
+
+.kmap-cell.dontcare {
+    background: #fef3c7;
+    color: #92400e;
+    border-color: #f59e0b;
+}
+
+.groups-legend {
+    background: linear-gradient(135deg, #f9fafb, #dbeafe);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #3b82f6;
+    margin-top: 1.5rem;
+}
+
+.groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.group-item {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.group-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.solution-steps {
+    margin-top: 2rem;
+}
+
+.step-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.step-main {
+    background: #dbeafe;
+    border-color: #3b82f6;
+    color: #1e40af;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.step-group {
+    background: #dcfce7;
+    border-color: #16a34a;
+    color: #166534;
+    font-weight: 600;
+}
+
+.step-final {
+    background: #f3e8ff;
+    border-color: #9333ea;
+    color: #7c2d12;
+    font-weight: bold;
+}
+
+.step-regular {
+    background: #f9fafb;
+    border-color: #d1d5db;
+    color: #374151;
+}
+
+/* Equation Display */
+.equation-display {
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff, #fce7f3);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 4px solid #3b82f6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.equation-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.equation-text {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+    color: #7c2d12;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.final-expression {
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff, #fce7f3);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 4px solid #3b82f6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.final-expression .equation-text {
+    font-size: 2rem;
+}
+
+/* Circuit Canvas */
+.canvas-container {
+    border: 4px solid #3b82f6;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.circuit-canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Circuit Info */
+.circuit-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #3b82f6;
+}
+
+.info-card:nth-child(2) {
+    background: linear-gradient(135deg, #dcfce7, #d1fae5);
+    border-color: #16a34a;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.info-card:nth-child(2) .info-title {
+    color: #166534;
+}
+
+.info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.color-dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.color-dot.blue { background: #3b82f6; }
+.color-dot.red { background: #ef4444; }
+.color-dot.green { background: #10b981; }
+.color-dot.purple { background: #8b5cf6; }
+
+/* Truth Table */
+.truth-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.truth-table th,
+.truth-table td {
+    border: 1px solid #d1d5db;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.truth-table th {
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+.truth-table .row-number {
+    font-weight: 500;
+}
+
+.truth-table .output-one {
+    background: #dcfce7;
+    color: #166534;
+    font-weight: bold;
+}
+
+.truth-table .output-dontcare {
+    background: #fef3c7;
+    color: #92400e;
+    font-weight: bold;
+}
+
+.truth-table .output-zero {
+    color: #6b7280;
+}
+
+.truth-summary {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 1rem;
+}
+
+.truth-legend {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.legend-color {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 2px;
+    border: 1px solid #d1d5db;
+}
+
+.legend-green { background: #dcfce7; border-color: #16a34a; }
+.legend-yellow { background: #fef3c7; border-color: #f59e0b; }
+.legend-white { background: white; }
+
+/* Utility Classes */
+.placeholder-text {
+    color: #6b7280;
+    font-size: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-list {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+    
+    .groups-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .circuit-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .language-selector {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .voice-buttons {
+        gap: 0.25rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.highlight-animation {
+    animation: highlight 0.6s ease-in-out;
+}
+
+@keyframes highlight {
+    0%, 100% { background-color: inherit; }
+    50% { background-color: #fef3c7; }
 }
