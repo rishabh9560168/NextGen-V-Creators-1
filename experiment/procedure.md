@@ -65,7 +65,7 @@ The simulation shows a full truth table for the given expression, highlighting t
 ---
 
 ### Step 8: **View Explanation**
-(Optional) Textual and/or voice-guided explanation is available for:
+ Textual and/or voice-guided explanation is available for:
 - Expression simplification
 - Gate conversion logic
 - Working of the circuit
