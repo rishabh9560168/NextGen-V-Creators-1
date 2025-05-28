@@ -1,72 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kmap-logic-solver-guide</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="kmap-logic-solver-guide" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Logic Gates Virtual Simulation</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Logic Circuit Simulator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Virtual Lab: Logic Gates Simulation (SOP/POS Form)</h1>
-    <p class="sub-heading">Simulate the behavior of digital logic gates as if you're in a real lab!</p>
-  </header>
+    <div class="min-h-screen bg-gradient">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h1 class="main-title">Digital Logic Circuit Simulator</h1>
+                <p class="subtitle">Interactive K-Map solver with circuit diagram generation and multi-language voice guidance</p>
+            </div>
 
-  <main class="container">
-    <section class="section simulation-panel">
-      <h2>Logic Gate Evaluation</h2>
-      <div class="lab-controls">
-        <div class="switches">
-          <label><input type="checkbox" class="input-bit" /> A</label>
-          <label><input type="checkbox" class="input-bit" /> B</label>
-          <label><input type="checkbox" class="input-bit" /> C</label>
+            <div class="grid-layout">
+                <!-- Input Panel -->
+                <div class="input-panel">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <span class="icon">⬜</span>
+                                Input Configuration
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <!-- Voice Guide -->
+                            <div id="voiceGuide" class="voice-guide">
+                                <div class="voice-header">
+                                    <h4 class="voice-title">
+                                        <span class="icon">🔊</span>
+                                        <span id="voiceGuideTitle">Voice Guide - K-Map Tutorial</span>
+                                    </h4>
+                                    <button id="toggleVoice" class="btn btn-outline btn-sm">
+                                        <span id="voiceIcon">🔇</span>
+                                        <span id="voiceStatus">Disabled</span>
+                                    </button>
+                                </div>
+                                <div id="voiceControls" class="voice-controls" style="display: none;">
+                                    <div class="language-selector">
+                                        <label class="language-label">
+                                            <span class="icon">🌐</span>
+                                            <span id="languageLabel">Language</span>
+                                        </label>
+                                        <select id="languageSelect" class="select">
+                                            <option value="en">English</option>
+                                            <option value="hi">हिंदी</option>
+                                        </select>
+                                    </div>
+                                    <p id="voiceDescription" class="voice-description">
+                                        Get detailed audio explanation of K-Map solving process and circuit design
+                                    </p>
+                                    <div class="voice-buttons">
+                                        <button id="playTutorial" class="btn btn-outline btn-full">
+                                            <span id="playIcon">▶️</span>
+                                            <span id="playText">Play K-Map Tutorial</span>
+                                        </button>
+                                        <button id="speakInput" class="btn btn-outline btn-full btn-green" style="display: none;">
+                                            <span class="icon">🔊</span>
+                                            <span id="speakInputText">Speak Current Input</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="variables">Number of Variables</label>
+                                <select id="variables" class="select">
+                                    <option value="2">2 Variables</option>
+                                    <option value="3" selected>3 Variables</option>
+                                    <option value="4">4 Variables</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formType">Output Form</label>
+                                <select id="formType" class="select">
+                                    <option value="SOP" selected>Sum of Products (SOP)</option>
+                                    <option value="POS">Product of Sums (POS)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="minterms" id="mintermsLabel">Minterms (comma-separated)</label>
+                                <input type="text" id="minterms" class="input" value="1,5,6,11,12,13,14" placeholder="1,5,6,11,12,13,14">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dontCares">Don't Care Terms (optional)</label>
+                                <input type="text" id="dontCares" class="input" value="4" placeholder="4">
+                            </div>
+
+                            <button id="solveBtn" class="btn btn-primary btn-full">
+                                <span class="icon">▶️</span>
+                                Solve K-Map
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="main-content">
+                    <div class="tabs">
+                        <div class="tab-list">
+                            <button class="tab-trigger active" data-tab="kmap">K-Map</button>
+                            <button class="tab-trigger" data-tab="circuit">Circuit Diagram</button>
+                            <button class="tab-trigger" data-tab="truth">Truth Table</button>
+                        </div>
+
+                        <!-- K-Map Tab -->
+                        <div id="kmap-tab" class="tab-content active">
+                            <div id="kmapSolver" class="kmap-solver">
+                                <div class="card">
+                                    <div class="card-content text-center">
+                                        <p class="placeholder-text">Enter your function parameters and click "Solve K-Map" to see the detailed solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Circuit Diagram Tab -->
+                        <div id="circuit-tab" class="tab-content">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">🔌 Fully Connected Logic Circuit Diagram</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div id="equationDisplay" class="equation-display" style="display: none;">
+                                        <p class="equation-title">⚡ Minimized Expression:</p>
+                                        <p id="equationText" class="equation-text">f = </p>
+                                    </div>
+                                    <div class="canvas-container">
+                                        <canvas id="circuitCanvas" class="circuit-canvas"></canvas>
+                                    </div>
+                                    <div class="circuit-info">
+                                        <div class="info-card">
+                                            <p class="info-title">🎨 Enhanced Features:</p>
+                                            <ul class="info-list">
+                                                <li><span class="color-dot blue"></span><strong>Fully Connected Wires:</strong> Every connection traced</li>
+                                                <li><span class="color-dot red"></span><strong>Connection Points:</strong> Visible junction dots</li>
+                                                <li><span class="color-dot green"></span><strong>Enhanced Gates:</strong> 3D shadows and gradients</li>
+                                                <li><span class="color-dot purple"></span><strong>Signal Flow:</strong> Color-coded paths</li>
+                                            </ul>
+                                        </div>
+                                        <div class="info-card">
+                                            <p class="info-title">⚙️ Circuit Details:</p>
+                                            <ul class="info-list">
+                                                <li>🔗 <strong>Complete Connectivity:</strong> All wires properly joined</li>
+                                                <li>🎯 <strong>Terminal Design:</strong> Enhanced input/output terminals</li>
+                                                <li>📏 <strong>Signal Tracing:</strong> Easy to follow connections</li>
+                                                <li>🌈 <strong>Color Coordination:</strong> Each term uniquely colored</li>
+                                                <li>⚡ <strong>Professional Layout:</strong> Industry-standard design</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Truth Table Tab -->
+                        <div id="truth-tab" class="tab-content">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Truth Table</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div id="truthTableContainer">
+                                        <p class="placeholder-text">Truth table will appear here after solving K-Map</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="gate-selector">
-          <label for="gate-select">Choose Gate:</label>
-          <select id="gate-select">
-            <option value="AND">AND</option>
-            <option value="OR">OR</option>
-            <option value="NAND">NAND</option>
-            <option value="NOR">NOR</option>
-            <option value="XOR">XOR</option>
-            <option value="XNOR">XNOR</option>
-          </select>
-        </div>
-        <button onclick="evaluateGate()">Run Simulation</button>
-        <div class="output" id="gate-output">Output: --</div>
-      </div>
-    </section>
+    </div>
 
-    <section class="section">
-      <h2>Truth Table Generator</h2>
-      <button onclick="generateTruthTable()">Generate Truth Table</button>
-      <div id="truth-table" class="output-table"></div>
-    </section>
-
-    <section class="section">
-      <h2>SOP / POS Expression Builder</h2>
-      <label>Min Terms (comma-separated): <input id="min-terms" type="text" placeholder="e.g. 1,3,5" /></label>
-      <br />
-      <label>Max Terms (comma-separated): <input id="max-terms" type="text" placeholder="e.g. 0,2,4" /></label>
-      <br />
-      <button onclick="buildExpressions()">Build Expressions</button>
-      <div class="output" id="expression-output"></div>
-    </section>
-
-    <section class="section">
-      <h2>Logic Gate Reference Diagrams</h2>
-      <div class="gates-diagram">
-        <div class="gate"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/AND_ANSI_Labelled.svg" alt="AND Gate" /><p>AND</p></div>
-        <div class="gate"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/OR_ANSI_Labelled.svg" alt="OR Gate" /><p>OR</p></div>
-        <div class="gate"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/NOT_ANSI_Labelled.svg" alt="NOT Gate" /><p>NOT</p></div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Virtual Labs Initiative | CSE Department</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
