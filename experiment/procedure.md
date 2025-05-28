@@ -1,78 +1,80 @@
-### Procedure
-The aim of this experiment is to understand and implement logic gate circuits using Sum of Products (SOP) and Product of Sums (POS) forms, derived from a given truth table. Below is a step-by-step procedure:
+# 🧪 Logic Gates Implementation (SOP/POS form) – Procedure
 
-1. Analyze the Problem Statement
-   
-i.Understand the number of input variables (e.g., A, B, C).
+This document outlines the step-by-step procedure to simulate the Logic Gates Implementation in SOP and POS forms in the Virtual Lab environment.
 
-ii.Obtain or construct the truth table for the given Boolean function.
+---
 
-2. Derive the SOP Expression
-   
-  i.Identify the output rows where the output is 1.
+## 🎯 Objective
 
-  ii.Write the minterms for those rows (each input is written as itself if 1, or complemented if 0).
+To implement and simulate logic gates using Boolean expressions in Sum of Products (SOP) and Product of Sums (POS) forms, and visualize the output through interactive gate-level diagrams and truth tables.
 
-  iii.Form the SOP expression by ORing all the minterms.
+---
 
-Example: If output is 1 for inputs A=0, B=1, C=1 → minterm = A'BC
-SOP = A'BC + AB'C + ABC
+## 🧰 Prerequisites
 
-3. Derive the POS Expression
+- Basic knowledge of logic gates: AND, OR, NOT, NAND, NOR
+- Understanding of SOP and POS forms
+- Familiarity with Boolean expressions
+- A modern browser (for running simulations)
 
- i.Identify the output rows where the output is 0.
+---
 
- ii.Write the maxterms for those rows (each input is written as itself if 0, or complemented if 1).
+## 🧪 Simulation Procedure
 
- iii.Form the POS expression by ANDing all the maxterms.
+### Step 1: **Launch Simulation**
+Open the simulation page from the virtual lab homepage or GitHub deployment link.
 
- Example: If output is 0 for A=1, B=0, C=1 → maxterm = (A' + B + C')
-POS = (A' + B + C')(A + B + C')
+---
 
-4. Simplify the Boolean Expression
-(Optional) Use Boolean algebra or Karnaugh Map (K-map) to simplify the SOP and POS expressions.
+### Step 2: **Choose Logic Form**
+Select the desired logic form:
+- `SOP` – Sum of Products
+- `POS` – Product of Sums
 
-5. Implement the SOP Form
-   
-i.Use basic logic gates: AND, OR, and NOT.
+---
 
-ii.For each minterm:
+### Step 3: **Enter Boolean Expression**
+Input a valid Boolean expression in the selected form.  
+**Example SOP:** `A'B + AB'`  
+**Example POS:** `(A + B)(A' + B')`
 
-  * Use NOT gates for complemented variables.
+---
 
-   * Use AND gates to combine variables for each minterm.
+### Step 4: **Parse and Simplify**
+The simulation will parse and simplify the Boolean expression to prepare it for gate-level implementation.
 
-iii.Finally, use an OR gate to combine all minterms.
+---
 
-6. Implement the POS Form
+### Step 5: **Auto-Generate Circuit**
+The simulator automatically generates a logic gate schematic corresponding to the expression:
+- SOP: OR-AND structure
+- POS: AND-OR structure
 
-i.Use basic logic gates: AND, OR, and NOT.
+---
 
-ii.For each maxterm:
+### Step 6: **Interactive Circuit Simulation**
+- Users can toggle input values (0 or 1)
+- Observe real-time changes in output
+- Truth table updates dynamically with every change
 
-* Use NOT gates for complemented variables.
+---
 
-* Use OR gates to form each maxterm.
+### Step 7: **Display of Truth Table**
+The simulation shows a full truth table for the given expression, highlighting the current state.
 
-iii.Finally, use an AND gate to combine all maxterms.
+---
 
-7. Connect and Simulate the Circuit
-   
-i.Connect inputs to logic gate structures according to the SOP/POS form.
+### Step 8: **View Explanation**
+(Optional) Textual and/or voice-guided explanation is available for:
+- Expression simplification
+- Gate conversion logic
+- Working of the circuit
 
-ii.Simulate or test the circuit by applying all combinations of inputs (truth table entries).
+---
 
-iii.Observe the output for each input set.
+### Step 9: **Reset or Try Another**
+You may reset the inputs or go back to enter a new SOP/POS expression and simulate again.
 
-8. Verify Output
-   
-i.Compare the simulated output with the original truth table.
+---
 
-ii.Ensure the output matches for all input combinations in both SOP and POS implementations.
-
-9. Conclusion
-    
-i.Understand the structural difference between SOP and POS circuits.
-
-ii.Learn the practical use of Boolean simplification and logic gate minimization.
 
