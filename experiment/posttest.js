@@ -89,56 +89,67 @@
 
 
   const myQuestions = [
-    {
-      question: "Which of these functions will be TRUE for inputs A=1, B=0, C=1?",  ///// Write the question inside double quotes
-      answers: {
-        a: "A'B + BC'",                 ///// Write the option 1 inside double quotes
-        b: "AB + AC",                  ///// Write the option 2 inside double quotes
-        c: "A + B'C",                 ///// Write the option 3 inside double quotes
-        d: "A' + BC",                  ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
+  {
+    question: "1. Which of these functions will be TRUE for inputs A=1, B=0, C=1?",
+    answers: {
+      a: "A'B + BC'",
+      b: "AB + AC",
+      c: "A + B'C",
+      d: "A' + BC"
     },
-    {
-      question: "Which logic expression is equivalent to a NOR gate?",  ///// Write the question inside double quotes
-      answers: {
-        a: "(A + B)'",                 ///// Write the option 1 inside double quotes
-        b: "AB",                      ///// Write the option 2 inside double quotes
-        c: "A' + B'",                ///// Write the option 3 inside double quotes
-        d: "(AB)'",                   ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
+    correctAnswer: "b"
+  },
+  {
+    question: "2. Which logic expression is equivalent to a NOR gate?",
+    answers: {
+      a: "(A + B)'",
+      b: "AB",
+      c: "A' + B'",
+      d: "(AB)'"
     },
-    {
-      question: "If a logic function has minterms m(0,2,3), what is its SOP form?",  ///// Write the question inside double quotes
-      answers: {
-        a: "A'B' + A'B + AB",                ///// Write the option 1 inside double quotes
-        b: "A + B",                         ///// Write the option 2 inside double quotes
-        c: "AB + A'B'",                    ///// Write the option 3 inside double quotes
-        d: "None of the above",             ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "a"                    ///// Write the correct option inside double quotes
-    }, 
-    {
-      question: "Which logic gate outputs LOW only when all inputs are HIGH?",  ///// Write the question inside double quotes
-      answers: {
-        a: "NAND",                  ///// Write the option 1 inside double quotes
-        b: "NOR",                  ///// Write the option 2 inside double quotes
-        c: "AND",                  ///// Write the option 3 inside double quotes
-        d: "XOR",                   ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
-    },  
-    {
-      question: "Which of the following is NOT a valid SOP expression?",  ///// Write the question inside double quotes
-      answers: {
-        a: "A'B + AB'",                 ///// Write the option 1 inside double quotes
-        b: "A + B + C",                  ///// Write the option 2 inside double quotes
-        c: "AB + BC + AC",                  ///// Write the option 3 inside double quotes
-        d: "(A + B)(A' + C)",                   ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
-    },   
+    correctAnswer: "a"
+  },
+  {
+    question: "3. If a logic function has minterms m(0,2,3), what is its SOP form?",
+    answers: {
+      a: "A'B' + A'B + AB",
+      b: "A + B",
+      c: "AB + A'B'",
+      d: "None of the above"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "4. Which logic gate outputs LOW only when all inputs are HIGH?",
+    answers: {
+      a: "NAND",
+      b: "NOR",
+      c: "AND",
+      d: "XOR"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "5. Which of the following is NOT a valid SOP expression?",
+    answers: {
+      a: "A'B + AB'",
+      b: "A + B + C",
+      c: "AB + BC + AC",
+      d: "(A + B)(A' + C)"
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "6. What is the main goal of converting a logic expression into SOP or POS form?",
+    answers: {
+      a: "To increase circuit size",
+      b: "To add more gates",
+      c: "To simplify implementation and optimize digital circuit design",
+      d: "To make the circuit look complex"
+    },
+    correctAnswer: "c"
+  };
+
     ///// To add more questions, copy the section below 
     									                  ///// this line
 
