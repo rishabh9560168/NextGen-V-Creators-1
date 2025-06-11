@@ -88,9 +88,7 @@
 /////////////// Write the MCQ below in the exactly same described format ///////////////
 
 
-  const posttest = {
-  version: "2.0",
-  questions: [
+  const myQuestions =  [
     {
       question: "Which logic gate outputs HIGH only when all inputs are HIGH?",
       answers: {
@@ -260,8 +258,8 @@
       },
       correctAnswer: "d",
       difficulty: "intermediate"
-    }
-  ]
+    
+  
 };
 
     ///// To add more questions, copy the section below 
