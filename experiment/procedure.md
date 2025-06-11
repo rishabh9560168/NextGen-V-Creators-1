@@ -1,16 +1,16 @@
-# 🧪 Logic Gates Implementation (SOP/POS form) – Procedure
+# Logic Gates Implementation (SOP/POS form) – Procedure
 
 This document outlines the step-by-step procedure to simulate the Logic Gates Implementation in SOP and POS forms in the Virtual Lab environment.
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 To implement and simulate logic gates using Boolean expressions in Sum of Products (SOP) and Product of Sums (POS) forms, and visualize the output through interactive gate-level diagrams and truth tables.
 
 ---
 
-## 🧰 Prerequisites
+##  Prerequisites
 
 - Basic knowledge of logic gates: AND, OR, NOT, NAND, NOR
 - Understanding of SOP and POS forms
@@ -19,7 +19,7 @@ To implement and simulate logic gates using Boolean expressions in Sum of Produc
 
 ---
 
-## 🧪 Simulation Procedure
+##  Simulation Procedure
 
 ### Step 1: **Launch Simulation**
 Open the simulation page from the virtual lab homepage or GitHub deployment link.
