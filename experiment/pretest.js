@@ -88,70 +88,179 @@
 /////////////// Write the MCQ below in the exactly same described format ///////////////
 
 
- const myQuestions = [
-  {
-    question: "1. लॉजिक गेट क्या है?",
-    answers: {
-      a: "एक प्रकार का कंप्यूटर",
-      b: "एक सॉफ्टवेयर प्रोग्राम",
-      c: "डिजिटल सर्किट का एक मूल निर्माण खंड जो लॉजिक ऑपरेशन करता है",
-      d: "एक मेमोरी डिवाइस"
+ const myQuestions  = [
+    {
+      question: "Which of the following gates is known as a universal gate?",
+      answers: {
+        a: "AND",
+        b: "OR",
+        c: "NAND",
+        d: "XOR"
+      },
+      explanations: {
+        a: "AND gate is not a universal gate.",
+        b: "OR gate cannot construct all logic functions.",
+        c: "NAND gate is a universal gate. <a href='https://en.wikipedia.org/wiki/NAND_gate'>Learn more</a>",
+        d: "XOR is not a universal gate."
+      },
+      correctAnswer: "c",
+      difficulty: "beginner"
     },
-    correctAnswer: "c"
-  },
-  {
-    question: "2. SOP फॉर्म में एक्सप्रेशन कैसे लिखा जाता है?",
-    answers: {
-      a: "AND of ORs",
-      b: "OR of ANDs",
-      c: "NOT of ANDs",
-      d: "XOR of ORs"
+    {
+      question: "What does SOP stand for in Boolean algebra?",
+      answers: {
+        a: "Sum of Powers",
+        b: "Set of Products",
+        c: "Sum of Products",
+        d: "Series of Products"
+      },
+      explanations: {
+        a: "Incorrect terminology.",
+        b: "Close but not standard term.",
+        c: "Correct. SOP means Sum of Products.",
+        d: "Not a valid term in Boolean logic."
+      },
+      correctAnswer: "c",
+      difficulty: "beginner"
     },
-    correctAnswer: "b"
-  },
-  {
-    question: "3. POS फॉर्म में एक्सप्रेशन किस रूप में होता है?",
-    answers: {
-      a: "AND of ORs",
-      b: "OR of NOTs",
-      c: "OR of ANDs",
-      d: "AND of ORs"
+    {
+      question: "The POS form of a Boolean expression is a product of:",
+      answers: {
+        a: "Products",
+        b: "Sums",
+        c: "Differences",
+        d: "Quotients"
+      },
+      explanations: {
+        a: "SOP is Sum of Products, not POS.",
+        b: "Correct. POS = Product of Sums.",
+        c: "Difference is not a Boolean term.",
+        d: "Quotients do not apply here."
+      },
+      correctAnswer: "b",
+      difficulty: "beginner"
     },
-    correctAnswer: "d"
-  },
-  {
-    question: "4. यदि किसी ट्रुथ टेबल में अंतिम कॉलम का मान '1' है, तो SOP में उस रो का योगदान कैसा होगा?",
-    answers: {
-      a: "0 को दर्शाएगा",
-      b: "एक प्रॉडक्ट टर्म जो सभी वेरिएबल्स का AND है",
-      c: "एक सम टर्म जो सभी वेरिएबल्स का OR है",
-      d: "उसका कोई योगदान नहीं होता"
+    {
+      question: "Which of the following expressions represents an AND gate?",
+      answers: {
+        a: "A + B",
+        b: "A * B",
+        c: "A / B",
+        d: "A - B"
+      },
+      explanations: {
+        a: "+ denotes OR gate.",
+        b: "* represents AND in Boolean logic.",
+        c: "Division is not used in Boolean algebra.",
+        d: "Subtraction is invalid in logic."
+      },
+      correctAnswer: "b",
+      difficulty: "beginner"
     },
-    correctAnswer: "b"
-  },
-  {
-    question: "5. SOP और POS एक्सप्रेशन्स के बीच मुख्य अंतर क्या है?",
-    answers: {
-      a: "SOP में XOR गेट्स प्रयोग होते हैं जबकि POS में नहीं",
-      b: "SOP में प्रॉडक्ट टर्म्स का OR होता है, POS में सम टर्म्स का AND होता है",
-      c: "SOP सिर्फ OR गेट का उपयोग करता है",
-      d: "POS में लॉजिक गेट्स की आवश्यकता नहीं होती"
+    {
+      question: "Which logic gate produces a HIGH output only when both inputs are LOW?",
+      answers: {
+        a: "AND",
+        b: "OR",
+        c: "NOR",
+        d: "XOR"
+      },
+      explanations: {
+        a: "AND outputs HIGH only when both inputs are HIGH.",
+        b: "OR outputs HIGH if at least one input is HIGH.",
+        c: "Correct. NOR is the inverse of OR.",
+        d: "XOR outputs HIGH when inputs differ."
+      },
+      correctAnswer: "c",
+      difficulty: "beginner"
     },
-    correctAnswer: "b"
-  },
-  {
-    question: "6. ट्रुथ टेबल से SOP फॉर्म कैसे प्राप्त किया जाता है?",
-    answers: {
-      a: "जहाँ आउटपुट '1' है, वहां से वेरिएबल्स का प्रॉडक्ट लिया जाता है",
-      b: "जहाँ आउटपुट '0' है, वहां से वेरिएबल्स का प्रॉडक्ट लिया जाता है",
-      c: "सिर्फ पहले रो को देखा जाता है",
-      d: "हर वेरिएबल को NOT कर दिया जाता है"
+    {
+      question: "Which of the following is NOT a basic logic gate?",
+      answers: {
+        a: "AND",
+        b: "OR",
+        c: "XOR",
+        d: "NOT"
+      },
+      explanations: {
+        a: "AND is a basic gate.",
+        b: "OR is a basic gate.",
+        c: "XOR is a derived gate.",
+        d: "NOT is a basic gate."
+      },
+      correctAnswer: "c",
+      difficulty: "beginner"
     },
-    correctAnswer: "a"
-  };
-                             ///// To add more questions, copy the section below 
-    									                  ///// this line
-
+    {
+      question: "Which expression is in canonical SOP form?",
+      answers: {
+        a: "A + B",
+        b: "A'B + AB'",
+        c: "A'B'C + ABC",
+        d: "(A + B)(A + C)"
+      },
+      explanations: {
+        a: "Not all combinations covered.",
+        b: "Not fully canonical.",
+        c: "Correct. Canonical SOP includes all variables.",
+        d: "This is POS form."
+      },
+      correctAnswer: "c",
+      difficulty: "intermediate"
+    },
+    {
+      question: "How many input combinations are possible for a 3-variable truth table?",
+      answers: {
+        a: "4",
+        b: "6",
+        c: "8",
+        d: "10"
+      },
+      explanations: {
+        a: "2 variables give 4 combinations.",
+        b: "Incorrect, not power of 2.",
+        c: "Correct. 2^3 = 8.",
+        d: "Wrong, not a power of 2."
+      },
+      correctAnswer: "c",
+      difficulty: "beginner"
+    },
+    {
+      question: "In SOP, a product term corresponds to a row where:",
+      answers: {
+        a: "Output is 0",
+        b: "Input is 0",
+        c: "Output is 1",
+        d: "All inputs are same"
+      },
+      explanations: {
+        a: "This is POS.",
+        b: "Incorrect concept.",
+        c: "Correct. Product terms are added for 1s.",
+        d: "Unrelated to output."
+      },
+      correctAnswer: "c",
+      difficulty: "intermediate"
+    },
+    {
+      question: "Which logic gate outputs LOW only when all inputs are HIGH?",
+      answers: {
+        a: "NAND",
+        b: "OR",
+        c: "AND",
+        d: "NOR"
+      },
+      explanations: {
+        a: "Correct. NAND inverts AND.",
+        b: "OR outputs HIGH with at least one HIGH input.",
+        c: "AND outputs HIGH when all inputs are HIGH.",
+        d: "NOR is an inverted OR."
+      },
+      correctAnswer: "a",
+      difficulty: "beginner"
+    
+  ]
+};
 
     /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
         till closing curly braces comma ( }, )
