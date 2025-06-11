@@ -88,67 +88,181 @@
 /////////////// Write the MCQ below in the exactly same described format ///////////////
 
 
-  const myQuestions = [
-  {
-    question: "1. Which of these functions will be TRUE for inputs A=1, B=0, C=1?",
-    answers: {
-      a: "A'B + BC'",
-      b: "AB + AC",
-      c: "A + B'C",
-      d: "A' + BC"
+  const posttest = {
+  version: "2.0",
+  questions: [
+    {
+      question: "Which logic gate outputs HIGH only when all inputs are HIGH?",
+      answers: {
+        a: "OR Gate",
+        b: "AND Gate",
+        c: "NOR Gate",
+        d: "NAND Gate"
+      },
+      explanations: {
+        a: "OR outputs HIGH when any input is HIGH.",
+        b: "Correct. AND outputs HIGH only if all inputs are HIGH.",
+        c: "NOR is the opposite of OR.",
+        d: "NAND is the opposite of AND."
+      },
+      correctAnswer: "b",
+      difficulty: "intermediate"
     },
-    correctAnswer: "b"
-  },
-  {
-    question: "2. Which logic expression is equivalent to a NOR gate?",
-    answers: {
-      a: "(A + B)'",
-      b: "AB",
-      c: "A' + B'",
-      d: "(AB)'"
+    {
+      question: "Which of the following expressions is a canonical SOP form?",
+      answers: {
+        a: "A + B",
+        b: "AB + A'C",
+        c: "A'B'C + AB'C'",
+        d: "(A + B)(C + D)"
+      },
+      explanations: {
+        a: "This is not in canonical form.",
+        b: "This is SOP, but not canonical.",
+        c: "Correct. It uses complete minterms.",
+        d: "This is POS form."
+      },
+      correctAnswer: "c",
+      difficulty: "intermediate"
     },
-    correctAnswer: "a"
-  },
-  {
-    question: "3. If a logic function has minterms m(0,2,3), what is its SOP form?",
-    answers: {
-      a: "A'B' + A'B + AB",
-      b: "A + B",
-      c: "AB + A'B'",
-      d: "None of the above"
+    {
+      question: "The POS form of a logic function is a product of:",
+      answers: {
+        a: "Minterms",
+        b: "Maxterms",
+        c: "Constants",
+        d: "Binary numbers"
+      },
+      explanations: {
+        a: "Minterms are used in SOP.",
+        b: "Correct. POS is based on maxterms.",
+        c: "Constants are not involved directly.",
+        d: "Binary numbers help form minterms/maxterms."
+      },
+      correctAnswer: "b",
+      difficulty: "beginner"
     },
-    correctAnswer: "a"
-  },
-  {
-    question: "4. Which logic gate outputs LOW only when all inputs are HIGH?",
-    answers: {
-      a: "NAND",
-      b: "NOR",
-      c: "AND",
-      d: "XOR"
+    {
+      question: "A NAND gate followed by a NOT gate behaves like which gate?",
+      answers: {
+        a: "AND",
+        b: "NOR",
+        c: "OR",
+        d: "XOR"
+      },
+      explanations: {
+        a: "Correct. NAND + NOT = AND.",
+        b: "This combination doesn't produce NOR.",
+        c: "Not the correct transformation.",
+        d: "This needs more gates."
+      },
+      correctAnswer: "a",
+      difficulty: "intermediate"
     },
-    correctAnswer: "a"
-  },
-  {
-    question: "5. Which of the following is NOT a valid SOP expression?",
-    answers: {
-      a: "A'B + AB'",
-      b: "A + B + C",
-      c: "AB + BC + AC",
-      d: "(A + B)(A' + C)"
+    {
+      question: "Which gate is known as a universal gate?",
+      answers: {
+        a: "AND",
+        b: "XOR",
+        c: "NAND",
+        d: "OR"
+      },
+      explanations: {
+        a: "AND alone is not universal.",
+        b: "XOR is not universal.",
+        c: "Correct. NAND can form any logic gate.",
+        d: "OR alone is not universal."
+      },
+      correctAnswer: "c",
+      difficulty: "beginner"
     },
-    correctAnswer: "d"
-  },
-  {
-    question: "6. What is the main goal of converting a logic expression into SOP or POS form?",
-    answers: {
-      a: "To increase circuit size",
-      b: "To add more gates",
-      c: "To simplify implementation and optimize digital circuit design",
-      d: "To make the circuit look complex"
+    {
+      question: "Which of these functions will be TRUE for inputs A=1, B=0, C=1?",
+      answers: {
+        a: "A'B + BC'",
+        b: "AB + AC",
+        c: "A + B'C",
+        d: "A' + BC"
+      },
+      explanations: {
+        a: "Evaluate with values: gives 0.",
+        b: "Evaluate: AB = 0, AC = 1 → Result = 1. Correct.",
+        c: "Evaluate: A=1, B'=1, C=1 → B'C = 1 → Result = 1, but not unique.",
+        d: "Evaluate gives 1, but second term is 0."
+      },
+      correctAnswer: "b",
+      difficulty: "advanced"
     },
-    correctAnswer: "c"
-  };
+    {
+      question: "Which logic expression is equivalent to a NOR gate?",
+      answers: {
+        a: "(A + B)'",
+        b: "AB",
+        c: "A' + B'",
+        d: "(AB)'"
+      },
+      explanations: {
+        a: "Correct. NOR = NOT of OR.",
+        b: "This is AND.",
+        c: "DeMorgan’s expansion, not a gate.",
+        d: "This is NAND."
+      },
+      correctAnswer: "a",
+      difficulty: "beginner"
+    },
+    {
+      question: "If a logic function has minterms m(0,2,3), what is its SOP form?",
+      answers: {
+        a: "A'B' + A'B + AB",
+        b: "A + B",
+        c: "AB + A'B'",
+        d: "None of the above"
+      },
+      explanations: {
+        a: "Correct. These represent minterms 0, 2, 3.",
+        b: "Too generic.",
+        c: "Incorrect combination.",
+        d: "A correct form exists."
+      },
+      correctAnswer: "a",
+      difficulty: "intermediate"
+    },
+    {
+      question: "Which logic gate outputs LOW only when all inputs are HIGH?",
+      answers: {
+        a: "NAND",
+        b: "NOR",
+        c: "AND",
+        d: "XOR"
+      },
+      explanations: {
+        a: "Correct. NAND outputs LOW only if all inputs are HIGH.",
+        b: "This is not correct.",
+        c: "AND outputs HIGH for all HIGH inputs.",
+        d: "XOR varies with input pattern."
+      },
+      correctAnswer: "a",
+      difficulty: "intermediate"
+    },
+    {
+      question: "Which of the following is NOT a valid SOP expression?",
+      answers: {
+        a: "A'B + AB'",
+        b: "A + B + C",
+        c: "AB + BC + AC",
+        d: "(A + B)(A' + C)"
+      },
+      explanations: {
+        a: "Valid SOP expression.",
+        b: "Valid SOP expression.",
+        c: "Valid SOP expression.",
+        d: "Correct. This is POS, not SOP."
+      },
+      correctAnswer: "d",
+      difficulty: "intermediate"
+    }
+  ]
+};
 
     ///// To add more questions, copy the section below 
     									                  ///// this line
