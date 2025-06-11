@@ -88,48 +88,68 @@
 /////////////// Write the MCQ below in the exactly same described format ///////////////
 
 
-  const myQuestions = [
-    {
-      question: "1. जिस सिद्धांत पर विशिष्ट घूर्णन के प्रयोग का आधार है वह है:",  ///// Write the question inside double quotes
-      answers: {
-        a: "ध्रुवीकृत प्रकाश ऑप्टिकली सक्रिय माध्यम से गुजरते समय दो घटकों में विभाजित हो जाता है",                  ///// Write the option 1 inside double quotes
-        b: "ध्रुवीकृत प्रकाश ऑप्टिकली सक्रिय माध्यम से गुजरते समय घुमता है",                  ///// Write the option 2 inside double quotes
-        c: "ध्रुवीकृत प्रकाश पानी से गुजरते समय विचलित हो जाता है",                  ///// Write the option 3 inside double quotes
-        d: "इनमें से कोई नहीं"                   ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
+ const myQuestions = [
+  {
+    question: "1. लॉजिक गेट क्या है?",
+    answers: {
+      a: "एक प्रकार का कंप्यूटर",
+      b: "एक सॉफ्टवेयर प्रोग्राम",
+      c: "डिजिटल सर्किट का एक मूल निर्माण खंड जो लॉजिक ऑपरेशन करता है",
+      d: "एक मेमोरी डिवाइस"
     },
-
-    {
-     question: "2. शुगर घोल की सांद्रता बढ़ाने पर ध्रुवीकृत प्रकाश का घुमाव कोण:",  ///// Write the question inside double quotes
-      answers: {
-        a: "बढ़ता है",                  ///// Write the option 1 inside double quotes
-        b: " घटता है",                  ///// Write the option 2 inside double quotes
-        c: "अपरिवर्तित रहता है",                  ///// Write the option 3 inside double quotes
-        d: "इनमें से कोई नहीं"                   ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
-    },     
-    {
-      question: "3. किसी भी घोल का विशिष्ट घूर्णन किस पर निर्भर करता है:",  ///// Write the question inside double quotes
-       answers: {
-         a: "सांद्रता",                  ///// Write the option 1 inside double quotes
-         b: "नलिका की लंबाई",                  ///// Write the option 2 inside double quotes
-         c: "तापमान",                  ///// Write the option 3 inside double quotes
-         d: "इनमें से कोई नहीं"                   ///// Write the option 4 inside double quotes
-       },
-       correctAnswer: "c"                ///// Write the correct option inside double quotes
-     }, 
-     {
-      question: "4. यदि नलिका की लंबाई बढ़ाई जाए तो किसी भी घोल का विशिष्ट घूर्णन:",  ///// Write the question inside double quotes
-       answers: {
-         a: "बढ़ता है",                  ///// Write the option 1 inside double quotes
-         b: "घटता है",                  ///// Write the option 2 inside double quotes
-         c: "अपरिवर्तित रहता है",                  ///// Write the option 3 inside double quotes
-         d: "इनमें से कोई नहीं"                   ///// Write the option 4 inside double quotes
-       },
-       correctAnswer: "c"                ///// Write the correct option inside double quotes
-     },                              ///// To add more questions, copy the section below 
+    correctAnswer: "c"
+  },
+  {
+    question: "2. SOP फॉर्म में एक्सप्रेशन कैसे लिखा जाता है?",
+    answers: {
+      a: "AND of ORs",
+      b: "OR of ANDs",
+      c: "NOT of ANDs",
+      d: "XOR of ORs"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "3. POS फॉर्म में एक्सप्रेशन किस रूप में होता है?",
+    answers: {
+      a: "AND of ORs",
+      b: "OR of NOTs",
+      c: "OR of ANDs",
+      d: "AND of ORs"
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "4. यदि किसी ट्रुथ टेबल में अंतिम कॉलम का मान '1' है, तो SOP में उस रो का योगदान कैसा होगा?",
+    answers: {
+      a: "0 को दर्शाएगा",
+      b: "एक प्रॉडक्ट टर्म जो सभी वेरिएबल्स का AND है",
+      c: "एक सम टर्म जो सभी वेरिएबल्स का OR है",
+      d: "उसका कोई योगदान नहीं होता"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "5. SOP और POS एक्सप्रेशन्स के बीच मुख्य अंतर क्या है?",
+    answers: {
+      a: "SOP में XOR गेट्स प्रयोग होते हैं जबकि POS में नहीं",
+      b: "SOP में प्रॉडक्ट टर्म्स का OR होता है, POS में सम टर्म्स का AND होता है",
+      c: "SOP सिर्फ OR गेट का उपयोग करता है",
+      d: "POS में लॉजिक गेट्स की आवश्यकता नहीं होती"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "6. ट्रुथ टेबल से SOP फॉर्म कैसे प्राप्त किया जाता है?",
+    answers: {
+      a: "जहाँ आउटपुट '1' है, वहां से वेरिएबल्स का प्रॉडक्ट लिया जाता है",
+      b: "जहाँ आउटपुट '0' है, वहां से वेरिएबल्स का प्रॉडक्ट लिया जाता है",
+      c: "सिर्फ पहले रो को देखा जाता है",
+      d: "हर वेरिएबल को NOT कर दिया जाता है"
+    },
+    correctAnswer: "a"
+  };
+                             ///// To add more questions, copy the section below 
     									                  ///// this line
 
 
