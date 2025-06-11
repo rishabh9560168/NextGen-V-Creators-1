@@ -1,11 +1,11 @@
 
-# 📚 References for Logic Gates Implementation (SOP/POS Form)
+# References for Logic Gates Implementation (SOP/POS Form)
 
 This document lists the key references and resources used in the development of the virtual lab simulation on "Logic Gates Implementation (SOP/POS form)". These materials cover fundamental digital logic design, simulation tools, and educational support.
 
 ---
 
-## 📘 Academic Resources
+##  Academic Resources
 
 1. **Digital Design by M. Morris Mano**
    - Edition: 5th
@@ -28,7 +28,7 @@ This document lists the key references and resources used in the development of 
 
 ---
 
-## 🖥️ Documentation & Technical Guides
+##  Documentation & Technical Guides
 
 1. **Mozilla Developer Network (MDN)**
    - URL: [https://developer.mozilla.org/](https://developer.mozilla.org/)
@@ -44,7 +44,7 @@ This document lists the key references and resources used in the development of 
 
 ---
 
-## 🎓 Educational Support
+## Educational Support
 
 1. **GeeksforGeeks - Boolean Algebra & Logic Gates**
    - URL: [https://www.geeksforgeeks.org/boolean-algebra/](https://www.geeksforgeeks.org/boolean-algebra/)
@@ -56,7 +56,7 @@ This document lists the key references and resources used in the development of 
 
 ---
 
-## 📌 Note
+##  Note
 
 
 ---
