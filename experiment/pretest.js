@@ -260,7 +260,7 @@
       difficulty: "beginner"
     
   ]
-};
+}
 
     /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
         till closing curly braces comma ( }, )
