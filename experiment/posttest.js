@@ -258,9 +258,7 @@
       },
       correctAnswer: "d",
       difficulty: "intermediate"
-    
-  
-}
+    }
 
     ///// To add more questions, copy the section below 
     									                  ///// this line
@@ -288,9 +286,6 @@
     Copy above section
 
     */
-
-
-
 
   ];
 
