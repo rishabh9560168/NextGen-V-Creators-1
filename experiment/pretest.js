@@ -55,12 +55,9 @@
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
-
-        // color the answers green
-        //answerContainers[questionNumber].style.color = "lightgreen";
+        // answerContainers[questionNumber].style.color = "lightgreen";
       } else {
         // if answer is wrong or blank
-        // color the answers red
         answerContainers[questionNumber].style.color = "red";
       }
     });
@@ -72,7 +69,6 @@
   const quizContainer = document.getElementById("quiz");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
- 
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -87,8 +83,7 @@
 
 /////////////// Write the MCQ below in the exactly same described format ///////////////
 
-
- const myQuestions  = [
+  const myQuestions  = [
     {
       question: "Which of the following gates is known as a universal gate?",
       answers: {
@@ -258,40 +253,8 @@
       },
       correctAnswer: "a",
       difficulty: "beginner"
-    
-  ]
-}
-
-    /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
-        till closing curly braces comma ( }, )
-
-        and paste it below the curly braces comma ( below correct answer }, ) of above 
-        question
-
-    Copy below section
-
-    {
-      question: "This is question n?",
-      answers: {
-        a: "Option 1",
-        b: "Option 2",
-        c: "Option 3",
-        d: "Option 4"
-      },
-      correctAnswer: "c"
-    },
-
-    Copy above section
-
-    */
-
-
-
-
+    }
   ];
-
-
-
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -299,17 +262,9 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-
   // display quiz right away
   buildQuiz();
 
   // on submit, show results
   submitButton.addEventListener("click", showResults);
 })();
-
-
-/////////////////////////////////////////////////////////////////////////////
-
-/////////////////////// Do not modify the above code ////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////
